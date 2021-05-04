@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="map_style.css">
+    </head>
+    <body>
+
+        <div class="header">
+            <h1>The Youth Vote</h1>
+          </div>
+        
+          <div class="topnav">
+            <a href="index.html">Introduction</a>
+            <a href="youth-president.html">2016 Presidential Election</a>
+            <a href="VoteCount.html">Youth Vote By The Numbers</a>
+            <a href="civic.html">Youth Civic Engagement Factors</a>
+          </div>
+
+        
+        <div class="map">
+            <span id="mapAttatch">
+            </span>
+            <span id="mapText">
+                <h1>2016 Presidential Election Results</h1>
+                <span id = "youth-pres"></span>
+                <div id = "mapText">Based on the Circle data for the 2016 election, out of all 50 states, only 14 States,Maine, New Hampshire, New York , New Jersey, Virginia, Kentucky, Illinois, Missouri, Iowa, Minnesota, Colorado, New Mexico, Nevada, and California, had the same youth choice for the Presidential canidate as the overall state choice.  Even more shocking is that if the youth vote had decided the election, 20 of the states would have voted for the Democratic candidate, and only 4 would have voted for the Republican candidate.  The national numbers were 30 Republican, and 22 Democratic. This large divide has to be taken with a bit of caution however since 26 states did not give data about the youth vote for the Presidential candiate, but still there is a clear shift to Democrat for youth voters compared to the national votes. This may be due to the fact that 18 to 23 year olds rank climate change, racism, and economic inequality as top issues according to Politico, which a align more with the Democratic agenda.</div>
+            </span>
+            
+        </div>
+        <h1>Color Key</h1>
+            <div id ="dem" class="circle">Democrat</div>
+            <div id="rep" class="circle">Republican</div>
+            <div id="equal" class="circle">Tie</div>
+            <div id="no-data" class="circle">No Data</div>
+        <script src="https://d3js.org/d3.v6.min.js"></script>
+        <script src="president.js" async defer></script>
+        </div>
+        
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        </body>
+</html>
+

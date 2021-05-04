@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>The Youth Vote</h1>
+      </div>
+
+    <div class="topnav">
+          <a href="index.html">Introduction</a>
+          <a href="youth-president.html">2016 Presidential Election</a>
+          <a href="VoteCount.html">Youth Vote By The Numbers</a>
+          <a href="civic.html">Youth Civic Engagement Factors</a>
+        </div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+        <h1>Youth Civic Engagement Factors</h1>
+        <p>Explore four factors that impact youth civic engagement.</p>
+    </div>
+    <div class="card">
+      <h2>EDUCATION</h2>
+      <p>Getting a higher education is not a luxury that everyone gets, and unfortunately not getting a higher education historically has marginalized those without the higher education from political life.  With more education comes a better understanding of civics as well as giving more highly educated people more opportunities to get involved in civic engagement.  There is a slight positive correlation between states with higher percentages of young people enrolled in college and those state’s youth voting percentages, with the trend being stronger in a Presidential election year.  Even stronger is the relationship between a state having a higher percentage of young people with a high school diploma and the percentage of young people who vote.  It is positively correlated relationship for both Presidential elections and Midterm elections.  Based on the the data in order to increase voter participation, states should put an emphasis on youth finishing college and continuing on to higher education. </p>
+      <h5>Relationship between youth enrolled in college and voting</h5>
+      <img src ="college-vote.png" height=400 width=722></img>
+      <h5>Relationship between youth with high school diploma and Voting</h5>
+      <img src ="hs-vote.png" height=400 width=722></img>
+      </div>
+    <div class="card">
+      <h2>QUALITY OF LIFE</h2>
+      <p>The quality of life a young person has growing up will impact their future, and their desire to vote in elections.  According to CIRCLE, “the socioeconomic conditions in a community inevitably shape the context and opportunities, or too often the lack thereof, for residents to engage in civic life.” There is a very strong positive relationship between a state’s median household income and the state’s youth voter turnout, indicating that the more money a household has, the more likely it is that a young person in that household will vote. Some states also have a statute on high school voter registration, but there does not seem to be any statistically significant relationship between that and median household income.  Looking at state party, Democratic states have a much higher median household income than Republican states. Finally the higher the child poverty rate the lower the youth voter turnout, which again supports the concept that a better quality of life leads to a higher civic participation.  </p>
+      <h5>Relationship between median household income and voting</h5>
+      <img src ="median-vote.png" height=400 width=722></img>
+      <h5>Relationship between median household income and high school voter registration statutes</h5>
+      <img src ="median-statute.png" height=400 width=706></img>
+      <h5>Relationship between median household income and State's winning Presidential canidate</h5>
+      <img src ="median-pres.png" height=400 width=706></img>
+      <h5>Relationship between child poverty rate and voting</h5>
+      <img src ="poverty-vote.png" height=400 width=706></img>
+    </div>
+    <div class="card">
+        <h2>CIVIC CULTURE</h2>
+        <p>One of the main aspects that make up a state’s civic culture is the presence of non-profits.  Looking at the youth vote, the data analysis focuses on non-profits that serve youth which create opportunities for civic engagement, skill building, and social impact.  Counterintuitive to what one may think, there is actually a negative relationship between states with higher percentages of non-profits serving youth and the state’s youth voter turnout.  This may be due to the fact that the non-profits that are serving youth are focusing on issues other than civic engagement.  Republican states also have higher percentages of non-profits serving youths than Democratic states, which can be tied back to the Republican states having a lower median household income, and therefore have a larger need for non-profits.</p>
+        <h5>Relationship between non-profits serving youth and voting</h5>
+        <img src ="nonprofit-vote.png" height=400 width=706></img>
+        <h5>Relationship between non-profits serving youth and State's winnning Presidential canidate</h5>
+        <img src ="nonprofit-pres.png" height=400 width=706></img>
+    </div>
+    <div class="card">
+        <h2>YOUTH CIVIC ENGAGEMENT</h2>
+        <p>While voting is the most obvious form of civic engagement, there are many other ways for young people to get involved in their communities.  For example talking about issues that they care about with their family and friends, or making consumer choices for political reasons (think going vegan for climate change), both allow young people to get involved in civic engagement.  The more young people discuss politics with their family and friends, the more likely they are to vote, especially in Midterm elections.  Overall the percentage of young people making consumer decisions for political reasons is very low for all states, but there is a slight positive relationship between states with a higher percentage of young people making consumer decisions for political reasons and those states youth voter turnout.  Regardless of voter turnout, youth civic engagement in any form is very important and will shape the way the US looks in the future. </p>
+        <h5>Relationship between discussing politics with family and friends and voting</h5>
+        <img src ="discuss-vote.png" height=400 width=706></img>
+        <h5>Relationship between making consumer choices for political reasons and voting</h5>
+        <img src ="consumer-vote.png" height=400 width=706></img>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About the Data</h2>
+      <p>The data is from CIRCLE, the Center for Information and Research on Civic Learning & Engagement at Tufts University.  CIRCLE is a non-partisan, independent research organization focused on youth civic engagement in the United States. They collect data about systemic barriers that keep young people from civic engagement.  CIRCLE is not only trying to identify the barriers, but they are also working to eliminate the barriers. The data I used is about US citizens ages 18-29 and their voting results as well as different conditions they face.</p>
+    </div>
+    <div class="card">
+        <h3>Sources</h3>
+        <p><a href="https://youthdata.circle.tufts.edu/">CIRCLE</a></p>
+        <p><a href="https://www.vox.com/2020/11/7/21552248/youth-vote-2020-georgia-biden-covid-19-racism-climate-change">VOX</a></p>
+        <p><a href="https://harvardpolitics.com/removing-barriers-youth-vote/">Hardvard Political Review</a></p>
+        <p><a href="https://www.politico.com/news/2020/10/11/gen-z-fall-trumpism-gop-realignment-424171">POLITICO</a></p>
+        <p><a href="https://www.census.gov/library/stories/2019/04/behind-2018-united-states-midterm-election-turnout.html#:~:text=Voter%20turnout%20went%20up%20among,2014%20election%20had%20the%20lowest.">Census</a></p>
+      </div>
+    <div class="card">
+      <h3>Contact Me</h3>
+      <p>Courtney Kennedy</p>
+      <p>Email: csk6snj@virginia.edu</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

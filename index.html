@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="map_style.css">
+    </head>
+    <body>
+
+        <div class="header">
+          <h1>The Youth Vote</h1>
+        </div>
+        
+        <div class="topnav">
+            <a href="index.html">Introduction</a>
+            <a href="youth-president.html">2016 Presidential Election</a>
+            <a href="VoteCount.html">Youth Vote By The Numbers</a>
+            <a href="civic.html">Youth Civic Engagement Factors</a>
+          </div>
+
+        <div class="intro">
+            <h1>Introduction</h1>
+            <p>Young people make up about one third of possible voters, but historically they have very low voter turnout.  In 1971 the 26th amendment was passed which allowed 18 to 20 year olds to vote for the first itme.  The following year 55% of eligible young voters voted in the presidential election, and young votes have struggled to meet that level of election participation again.  In 2016, a presidential election year, only 38% of eligible young voted and in 2018, a non-presidential election only 28.2% voted.  We’re looking at voting percentages 20 to 30 percentage points lower than older voters, which means the youth voice is not as well represented in elections.  As a 20 year old I find it hard to believe that young people just do not care, so I explored how education, quality of life, civic culture, and youth civic engagement all impact youth civic involvement.  Explore this website to see trends of 18-29 year olds casting ballots in the election and the factors that may be playing a role in the low voter turnout numbers.
+              </p>
+        </div>
+
+        <div class="map">
+            <span id="mapAttatch">
+            </span>
+            <span id="mapText">
+                <h1>Look at the Youth Voting Percentage for Different Election Years</h1>
+                <div id = "pct-button"></div>
+                <div id = "state-info">
+                    <h1>State Information</h1>
+                </div>
+                <div id = "pct-change-button">
+                    <h1>See what states remained above 40% youth votes</h1>
+                </div>
+            </span>
+        </div>
+
+        <div>
+            <img src="vote-scale.png" width = 600px height = 80px>
+        </div>
+        
+        <script src="https://d3js.org/d3.v6.min.js"></script>
+        <script src="geo.js" async defer></script>
+        </div>
+        
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        </body>
+</html>
+
